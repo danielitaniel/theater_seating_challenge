@@ -208,7 +208,7 @@ class MovieTheaterSeating:
         seats = []
 
         if(is_too_big):
-            partitions = int(ceil(float(num_seats)/20))
+            partitions = int(ceil(float(num_seats)/20)) # TODO
             partition_size = num_seats//partitions
             remaining_members = num_seats % partition_size
             old_theater_copy = copy.deepcopy(self.theater_seats)
@@ -291,9 +291,9 @@ if __name__ == "__main__":
     print("")
 
     q1 = "Please insert the relative path: "
-    print("hello")
+
     file_path = input(q1)
-    print("fucks")
+
     print(file_path)
     fn = file_path.split("/")[-1]
     outout_path = "outputs/output_" + fn
