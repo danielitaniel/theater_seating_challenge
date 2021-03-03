@@ -40,8 +40,8 @@ The input should be a .txt file. It's structure should be as follows:
 R001 3<br/>
 R002 2<br/>
 R003 5<br/>
-.... . <br/>      
-.... ..<br/> 
+.... . <br/>
+.... ..<br/>
 R### #<br/> 
 
 
