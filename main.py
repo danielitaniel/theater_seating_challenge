@@ -208,7 +208,7 @@ class MovieTheaterSeating:
         seats = []
 
         if(is_too_big):
-            partitions = int(ceil(float(num_seats)/20)) # TODO
+            partitions = int(ceil(float(num_seats)/20)) # TODO: Fix partitioning
             partition_size = num_seats//partitions
             remaining_members = num_seats % partition_size
             old_theater_copy = copy.deepcopy(self.theater_seats)
@@ -308,7 +308,13 @@ if __name__ == "__main__":
     for reservation in theater_obj.reservations:
         reservation_tuple = reservation.split(' ')
         reservation_reference = reservation_tuple[0]
-        num_requested_seats = int(reservation_tuple[1])
+        try:
+            num_requested_seats = int(reservation_tuple[1])
+        except ValueError as e:
+            print("")
+            print("Error: For the number of reservations, please input a valid number ")
+            print("")
+            raise(e)
 
         booked_seats = theater_obj.assign_group_seats(num_requested_seats)
 
