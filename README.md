@@ -30,7 +30,7 @@ The algorithm has 7 main steps:
 3. The algorithm will continue to assign customers in the middle seats (regardless of row) until all center seats have been taken
 4. At this point, the algorithm will switch and utilize binary search. The algorithm first searches for empty seats to the left of where the center audience is seated.
 5. If #3 fails, then the binary search will search to the right of the center of the audience.
-6. If #2, #3, and #4 fail, then we revert to a brute force approach, in order to achieve maximum utilization of available seats in the theater.
+6. If #2, #3, and #4 fail, then we revert to a brute force approach, in order to achieve maximum capacity of available seats in the theater.
 7. If #2-#5 fail. then there is no such possible arrangement for the party. At this time, no booking will be made.
 
 # The Input
