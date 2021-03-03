@@ -69,11 +69,16 @@ class MovieTheaterSeating:
     """
 
     def get_input_rows(self):
-        f = open(self.file_path, "r")
-        input = f.read()
-        input_array = input.split('\n')
-        f.close()
-        return input_array[:-1]
+        try:
+            f = open(self.file_path, "r")
+            input = f.read()
+            input_array = input.split('\n')
+            f.close()
+            return input_array[:-1]
+        
+        except:
+            print("Unexpected error:", sys.exc_info()[0])
+            raise
 
 
 
@@ -285,8 +290,11 @@ if __name__ == "__main__":
 
     print("")
 
-    q1 = 'Please insert the relative path: '
+    q1 = "Please insert the relative path: "
+    print("hello")
     file_path = input(q1)
+    print("fucks")
+    print(file_path)
     fn = file_path.split("/")[-1]
     outout_path = "outputs/output_" + fn
     
