@@ -37,12 +37,12 @@ The algorithm has 7 main steps:
 
 The input should be a .txt file. It's structure should be as follows:
 
-R001 3. 
-R002 2. 
-R003 5. 
-.... ..      
-.... ..  
-R### #. 
+R001 3<br/>
+R002 2<br/>
+R003 5<br/>
+.... .<br/>      
+.... ..<br/> 
+R### #<br/> 
 
 
 
@@ -53,11 +53,11 @@ Where R### represents the reservation, and the # to the right represents the num
 The output is guaranteed to be a .txt file. It's structure will be as follows:
 
 
-R001 F9, F10, F11. 
-R002 H9, H10. 
-R003 D8, D9, D10, D11, D12. 
-.... ..
-.... ...
-R### booking unavailable.
+R001 F9, F10, F11<br/> 
+R002 H9, H10<br/>
+R003 D8, D9, D10, D11, D12<br/>
+.... .<br/>
+.... ..<br/>
+R### booking unavailable<br/>
 
 
