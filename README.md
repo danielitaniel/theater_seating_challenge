@@ -40,7 +40,7 @@ The input should be a .txt file. It's structure should be as follows:
 R001 3<br/>
 R002 2<br/>
 R003 5<br/>
-.... .<br/>      
+.... . <br/>      
 .... ..<br/> 
 R### #<br/> 
 
@@ -56,7 +56,7 @@ The output is guaranteed to be a .txt file. It's structure will be as follows:
 R001 F9, F10, F11<br/> 
 R002 H9, H10<br/>
 R003 D8, D9, D10, D11, D12<br/>
-.... .<br/>
+.... . <br/>
 .... ..<br/>
 R### booking unavailable<br/>
 
