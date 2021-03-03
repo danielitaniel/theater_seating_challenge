@@ -12,4 +12,11 @@ Due to the ongoing pandemic, movie theaters have restrictions. Rather than havin
 
 # The Process
 
-The user starts execution of the program by running `python main.py`, in which they will immediately be prompted with a command asking them to enter the relative path in which to read the input .txt file from. If the path is valid, the program will create an output file and will return the relative path to the output file on the command line.
+The user starts execution of the program by running `python main.py`, in which they will immediately be prompted with a command asking them to enter the relative path in which to read the input .txt file from. If the path is valid, the program will create an output file and will return the relative path to the output file on the command line. Otherwise, the user will be thrown with an `Error` message.
+
+# The Algorithm
+
+The algorithm has x main steps:
+
+1. This algorithm assumes that movie watchers prefer to be seated in the middle aisle and middle seat of the theater based on statistical research by the developer. 
+2. The algorithm will continue to assign 
