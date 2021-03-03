@@ -26,4 +26,33 @@ The user starts execution of the program by running `python main.py`, in which t
 The algorithm has x main steps:
 
 1. This algorithm assumes that movie watchers prefer to be seated in the middle aisle and middle seat of the theater based on statistical research by the developer. 
-2. The algorithm will continue to assign 
+2. The algorithm will continue to assign customers in the middle seats (regardless of row) until all center seats have been taken
+3. At this point, the algorithm will switch and utilize binary search. The algorithm first searches for empty seats to the left of where the center audience is seated.
+4. If #3 fails, then the binary search will search to the right of the center of the audience.
+5. If #2, #3, and #4 fail, then we revert to a brute force approach, in order to achieve customer satisfaction as there may be available seats even with the social distancing restrictions.
+6. If #2-#5 fail. then there is no such possible arrangement for the party. At this time, no booking will be made
+
+# The Input
+
+The input should be a .txt file. It's structure should be as follows:
+
+R001 3
+R002 2
+R003 5
+.... .
+.... .
+R### #
+
+
+Where R### represents the reservation, and the # to the right represents the number of seats requested for the corresponding reservation.
+
+# The Output
+
+The output is guaranteed to be a .txt file. It's structure will be as follows:
+R001 F9, F10, F11
+R002 H9, H10
+R003 D8, D9, D10, D11, D12
+.... .
+.... ..
+R### booking unavailable
+
