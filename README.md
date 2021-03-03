@@ -26,12 +26,12 @@ The user starts execution of the program by running `python main.py`, in which t
 The algorithm has 7 main steps:
 
 1. First come first serve. Early birds are seated in the middle aisle and middle seat of the theater. 
-2. To ensure customer satisfaction, this algorithm attempts to keep parties as clustered together as possible (even during a pandemic!). There are two such cases for this: a). The party consists of a size less than 21. In this cass all customers can sit together. b). The party consists of a size greater than 20. In this case, the algorithm will split the party into partitions, where each partition is roughly the same size. These partitions will all sit together. In the case where all but one partition can be seated, the reservation will not go through and there will NOT be a booking.
+2. To ensure customer satisfaction, this algorithm attempts to keep parties as clustered together as possible (even during a pandemic!). There are two such cases for this: a). The party consists of a size less than 21. In this cass all customers can sit together. b). The party consists of a size greater than 20. In this case, the algorithm will split the party into partitions, where each partition is roughly the same size. Each partition will sit together in the same row. In the case where all but one partition can be seated, the reservation will not go through and there will NOT be a booking.
 3. The algorithm will continue to assign customers in the middle seats (regardless of row) until all center seats have been taken
 4. At this point, the algorithm will switch and utilize binary search. The algorithm first searches for empty seats to the left of where the center audience is seated.
 5. If #3 fails, then the binary search will search to the right of the center of the audience.
-6. If #2, #3, and #4 fail, then we revert to a brute force approach, in order to achieve customer satisfaction as there may be available seats even with the social distancing restrictions.
-7. If #2-#5 fail. then there is no such possible arrangement for the party. At this time, no booking will be made
+6. If #2, #3, and #4 fail, then we revert to a brute force approach, in order to achieve maximum utilization of available seats in the theater.
+7. If #2-#5 fail. then there is no such possible arrangement for the party. At this time, no booking will be made.
 
 # The Input
 
