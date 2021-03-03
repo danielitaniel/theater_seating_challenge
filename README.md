@@ -4,7 +4,7 @@ In this project, I use create an algorithm utilizing binary search in order to s
 
 # Requirements:
 
-It is integral that developers use python 3.8 in order to run main.py
+Python 3.8
 
 # COVID-19 Protocols
 
