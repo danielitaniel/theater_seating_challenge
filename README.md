@@ -12,4 +12,4 @@ Due to the ongoing pandemic, movie theaters have restrictions. Rather than havin
 
 # The Process
 
-The user starts execution of the program by running $python main.py$
+The user starts execution of the program by running `python main.py`
