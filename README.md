@@ -1,6 +1,6 @@
 # Theater Seating Challenge
 
-In this project, I use create an algorithm utilizing binary search in order to seat movie watchers at a theater (with COVID-19 protocols).
+In this project, I create an algorithm that utilizes binary search in order to seat movie watchers at a theater (with COVID-19 protocols).
 
 # Requirements:
 
@@ -12,7 +12,7 @@ Due to the ongoing pandemic, movie theaters have restrictions. Rather than havin
 
 # Assumptions
 
-- In order for inputs to be read properly, there can only be one new line at the end of an input.txt file. Otherwise, functionality will be broken.
+- Theater size is fixed. Namely, this algorithm assumes there are 10 rows in each theater with 20 seats in each row.
 
 - This algorithm assumes that movie watchers prefer to be seated in the middle aisle and middle seat of the theater based on statistical research by the developer.
 
@@ -48,6 +48,7 @@ R### #<br/>
 
 Where R### represents the reservation, and the # to the right represents the number of seats requested for the corresponding reservation.
 
+NOTE: In order for inputs to be read properly, there has to be one (and only one) new line at the end of an input.txt file. Otherwise, functionality will be broken.
 # The Output
 
 The output is guaranteed to be a .txt file. It's structure will be as follows:
